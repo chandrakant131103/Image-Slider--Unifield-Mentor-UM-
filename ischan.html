@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Slider-Cricketer</title>
+<link rel="stylesheet" href="ischan.css">
+</head>
+
+<body>
+
+    <!-- container of slider -->
+    <div class="slider-container">
+
+        <!-- Main slider wrapper  -->
+
+        <div class="slider-wrapper">
+            <!-- Slides with actual images in list and size alteration will occur later in css -->
+
+            <div class="slide active">
+                <img src="images/76003-1701849325.jpg" alt="glenn maxwell">
+            </div>
+            <div class="slide">
+                <img src="images/Mitchell-Starc-Australia-2015_3344051.jpg" alt="Mitchell-Starc-Australia">
+            </div>
+            <div class="slide">
+                <img src="images/Rohit-Sharma-profile1700142481090.jpg" alt="Rohit Sharma">
+            </div>
+            <div class="slide">
+                <img src="images/virat-kohli-in-sunglasses-yc8dfpcjssp3s4se.jpg" alt="Virat Kohli">
+            </div>
+
+            <div class="slide">
+                <img src="images/wp5114661.jpg" alt="abd">
+            </div>
+
+            <!-- Navigation buttons -- previous and next -->
+
+<!-- Allow users to click on "Next" and "Previous" buttons to navigate through the
+images. -->
+
+            <button class="nav-button prev"  onclick="changeSlide(-1)">&#8249;</button>
+            <button class="nav-button next"  onclick="changeSlide(1)">&#8250;</button>
+
+        </div>
+
+        <!-- Dots indicator according to index currentslide(index)  and changeslide(index) -->
+
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+        <!-- Control panel of prev and next -->
+        <div class="controls">
+
+<!-- automatic slider function to keep auto toggle (toggleAutoPlay) function  -->
+
+
+            <div class="auto-toggle">
+
+                <span>Auto-play:</span>
+                <div class="toggle-switch active"  onclick="toggleAutoPlay()">
+                    <div class="toggle-slider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="ischan.js"></script>
+</html>
